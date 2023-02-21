@@ -104,7 +104,9 @@ const renewJWT = async (req, res = express.response) => {
     res.json({
         ok: true,
         msg: 'renew',
-        token
+        token,
+        uid,
+        name
     });
 }
 
