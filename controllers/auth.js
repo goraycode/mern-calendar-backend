@@ -77,6 +77,7 @@ const LoginUser = async (req, res = express.response) => {
         res.status(200).json({
             ok: true,
             uid: user.id,
+            name: user.name,
             msg: 'Login',
             token
         })
