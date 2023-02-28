@@ -24,8 +24,8 @@ router.get("/", getEvents);
 router.post("/",
     [
         check("title", "Obligatory field").not().isEmpty(),
-        check("start", "Obligatory field").isDate(),
-        check("end", "Obligatory field").isDate(),
+        check("start", "Obligatory field").not().isEmpty(),
+        check("end", "Obligatory field").not().isEmpty(),
         validateFields,
     ]
 
