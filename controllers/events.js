@@ -19,7 +19,7 @@ const createEvent = async (req, res = response) => {
 
     const { title, start, end } = req.body;
 
-    const fields = [title, start, end];
+    const fields = [title,new Date(start), new Date(end)];
 
     try {
 
